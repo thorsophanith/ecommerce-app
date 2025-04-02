@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react';
 import { CiSearch } from "react-icons/ci";
-import { FaCartArrowDown } from "react-icons/fa6";
 import logo from '../../assets/logo/logo.png';
 import { Link } from 'react-router-dom';
 import { assets } from '../../assets/assets';
