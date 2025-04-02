@@ -1,0 +1,85 @@
+@import "tailwindcss";
+* {
+  scroll-behavior: smooth;
+}
+.active {
+  border-bottom: 3px solid rgb(230, 0, 0);
+}
+a {
+  cursor: pointer;
+}
+.image {
+  background-image: url("./assets/header_img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+h2 {
+  text-shadow: 4px 4px 4px rgb(255, 110, 14);
+}
+
+/* @media only screen and (max-device-width: 1018px) {
+
+    .p1{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-device-width: 767px) {
+
+    .p1{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-device-width: 685px) {
+    h2{
+        font-size: 3.3cqmax;
+    }
+    .p1{
+        font-size: 12.3px;
+    }
+}
+
+@media only screen and (max-device-width: 599px) {
+    h2{
+        font-size: 2.6cqmax;
+    }
+    .p1{
+        font-size: 1.2cqmax;
+    }
+}
+
+@media only screen and (max-device-width: 494px) {
+    h2{
+        font-size: 2cqmax;
+    }
+    .p1{
+        font-size: 1cqmax;
+    }
+} */
+
+#styled {
+  margin: auto;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.box .active {
+  outline: 5px;
+  background: red;
+  border-radius: 100%;
+  padding: 2px;
+}
+.dost{
+  padding: 4px;
+  background-color: rgba(0, 81, 255, 0.274);
+  border-radius: 100%;
+}
+.dost1{
+  background-color: rgba(0, 225, 255, 0.986);
+  border-radius: 100%;
+}
+
