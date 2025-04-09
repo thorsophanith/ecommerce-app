@@ -6,16 +6,16 @@ function Category({category, setCategory}) {
   return (
    <div className='max-w-[1600px] m-auto mt-3 px-4' id='category'>
     <div className='py-10 mb-7'>
-    <h1 className='text-3xl font-bold py-5'>Explore our menu</h1>
-    <p className='font-medium text-gray-600'>You can download or print the best Transparent Food Png collection for free. In additon, you can 
+    <h1 className='text-3xl font-bold py-5 text-white'>Explore our menu</h1>
+    <p className='font-medium text-gray-200'>You can download or print the best Transparent Food Png collection for free. In additon, you can
        <br /> discover our great content using our "search bar" above. Here we go!</p>
     </div>
      <div className='' style={{position: 'relative', overflow: 'hidden'}}>
       <Slider
-        arrows 
-        autoplay 
+        arrows
+        autoplay
         autoplaySpeed={2500} // Time before the next slide
-        pauseOnHover 
+        pauseOnHover
         slidesToShow={5}  // Show 3 slides at a time
         slidesToScroll={1} // Scroll one slide at a time
         infinite
@@ -24,9 +24,9 @@ function Category({category, setCategory}) {
       >
         {menu_list.map((item,index)=>{
                 return(
-                    <div className='box' key={index} onClick={()=>setCategory(prev=>prev===item.menu_name?"All":item.menu_name)}>
+                    <div className='box' id='pro' key={index} onClick={()=>setCategory(prev=>prev===item.menu_name?"All":item.menu_name)}>
                      <img src={item.menu_image} alt="" className={category===item.menu_name?"active":""} id='styled'/>
-                     <p className='text-center max-md:text-xs'>{item.menu_name}</p>
+                     <p className='text-center max-md:text-xs text-gray-200'>{item.menu_name}</p>
                     </div>
                 )
             })}

@@ -10,8 +10,8 @@ function Footer() {
       <div className="container px-4 mx-auto">
         <div className="-mx-4 flex flex-wrap justify-between">
           <div className="px-4 my-4 w-full xl:w-1/5">
-            <a href="/" className="block w-56 mb-10">
-            <img src={ logo } alt=""  />
+            <a href="/" className="block max-w-56 mb-10">
+            <img src={ logo } alt="" />
             </a>
             <p className="text-justify">
             Feel free to customize this description with your store name, specific products or categories, and any unique selling points that set your eCommerce business apart.

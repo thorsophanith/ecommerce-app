@@ -2,7 +2,7 @@ import React from 'react'
 
 function Download() {
   return (
-    <div className='max-w-[1600px] m-auto py-10 rounded-3xl px-3' id='app'><section id="download" aria-label="" className="bg-blue-400 rounded-3xl ">
+    <div className='max-w-[1600px] m-auto py-10 rounded-3xl px-3' id='app'><section id="download" aria-label="" className="hover:outline-blue-200 hover:outline-2 bg-[#aaaaff41] duration-500 shadow-lg shadow-[#0000008c] rounded-3xl ">
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div
         className="relative -mx-4 overflow-hidden px-4 py-20 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-26">

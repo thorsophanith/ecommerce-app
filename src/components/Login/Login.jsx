@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
 import { assets } from '../../assets/assets'
+import './Login.css'
 
 function Login({setShowLogin}) {
     const [currState, setCurrState] = useState("Login")
   return (
     <div className='absolute top-0 z-40 px-4 w-full h-full bg-[#00000063]'>
-        <div className='max-w-[400px] h-auto m-auto px-4 p-5 bg-sky-100 shadow-2xl shadow-sky-400 rounded-2xl sticky top-[20%] max-sm:top-[17%] '>
+        <div className='topsit max-w-[400px] max-md:w-[90%] z-40 h-auto m-auto px-4 p-5 bg-white shadow-2xl shadow-sky-400 rounded-2xl'>
         <form action="" className=''>
             <div className='flex justify-between px-2'>
             <h3 className='text-lg font-bold'>{currState}</h3>
             <img onClick={() => setShowLogin(false)} src={assets.cross_icon} alt="" className='cursor-pointer rounded-full hover:bg-sky-500 bg-sky-300 hover:outline-4 outline-sky-500 duration-300 p-1 w-6 h-6'/>
             </div>
-    <div className="mb-6 py-8">
+    <div className="mb-6 md:py-8">
       {currState==="Login"?<></>
       :<><label for="name" className="block text-gray-800 font-bold">Your Name:</label><input type='text' placeholder='your name' required className='mb-6 w-full border border-gray-300 py-2 pl-3 rounded mt-2 outline-none focus:ring-indigo-600 :ring-indigo-600'/></>}
       <label for="name" className="block text-gray-800 font-bold">Email:</label>

@@ -8,7 +8,7 @@ import Contact from '../components/Contact/Contact';
 function Home() {
 const [category,setCategory] = useState("All");
   return (
-    <div className='scroll-smooth'>
+    <div className='scroll-smooth mt-4'>
         <Hero />
         <Category  category={category} setCategory={setCategory}/>
         <FoodDisplay category={category}/>
